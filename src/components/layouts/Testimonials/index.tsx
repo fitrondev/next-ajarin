@@ -30,7 +30,7 @@ const testimonialsData = [
 
 const Testimonials = () => {
   return (
-    <section className="py-5 md:py-10">
+    <section className="py-5 md:py-10 lg:py-20">
       <div className="container space-y-5 md:space-y-10">
         <Title
           title="Testimonials"
