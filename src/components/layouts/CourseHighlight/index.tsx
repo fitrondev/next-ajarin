@@ -68,7 +68,7 @@ const CourseHighlight = () => {
 
         <div className="flex items-center justify-center">
           <Button variant={"outline"} size={"lg"} asChild>
-            <Link href="/courses">Lihat Semua Kursus</Link>
+            <Link href="/kursus">Lihat Semua Kursus</Link>
           </Button>
         </div>
       </div>
