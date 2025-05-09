@@ -55,6 +55,7 @@ const CourseHighlight = () => {
           {courseData.map((item) => (
             <CourseCard
               key={item.id}
+              id={item.id}
               image={item.image}
               title={item.title}
               name={item.name}

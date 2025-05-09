@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 type CourseCardProps = {
+  id: number;
   image: string;
   title?: string;
   name?: string;
@@ -20,6 +21,7 @@ type CourseCardProps = {
 };
 
 const CourseCard = ({
+  id,
   image = "/images/coursefallback.jpg",
   title,
   name,
@@ -28,7 +30,7 @@ const CourseCard = ({
   price,
 }: CourseCardProps) => {
   return (
-    <Link href={"/course/1"}>
+    <Link href={`/kursus/${id}`}>
       <Card className="pt-0 px-0 gap-2 group hover:shadow-lg transition-shadow duration-300">
         <CardHeader className="p-0">
           <Image
