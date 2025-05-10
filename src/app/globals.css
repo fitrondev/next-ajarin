@@ -125,3 +125,12 @@
 @utility container {
   @apply max-w-[1280px] mx-auto px-5 lg:px-2 2xl:px-0;
 }
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
