@@ -7,7 +7,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { SignedOut, SignOutButton } from "@clerk/nextjs";
+import { SignOutButton } from "@clerk/nextjs";
 import { LogOut, User as Profile, LayoutDashboard } from "lucide-react";
 import Link from "next/link";
 
@@ -23,6 +23,7 @@ const DropdownProfile = ({
   imageUrl,
 }: DropdownProfileProps) => {
   const avatarFallback = `${firstName[0]}${lastname[0]}`;
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="focus:outline-none focus:ring-[2px] focus:ring-offset-2 focus:ring-primary rounded-full flex items-center gap-2">
@@ -51,11 +52,7 @@ const DropdownProfile = ({
             <LayoutDashboard className="h-4 w-4" /> Dashboard
           </Link>
         </DropdownMenuItem>
-        <SignedOut>
-          <p>You are signed out.</p>
-        </SignedOut>
         <DropdownMenuItem className="text-destructive" asChild>
-          {/* <LogOut className="h-4 w-4" /> */}
           <SignOutButton redirectUrl="/sign-in">
             <p>
               <LogOut className="h-4 w-4" /> Sign Out
