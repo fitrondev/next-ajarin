@@ -220,7 +220,13 @@ const Footer = () => {
                     Email
                   </label>
 
-                  <Input type="email" placeholder="Enter your email" />
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email"
+                    autoComplete="off"
+                  />
 
                   <Button size={"lg"} type="submit">
                     Subscribe
